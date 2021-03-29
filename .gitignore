@@ -12,7 +12,7 @@ node_modules
 
 # production
 build
-lib/
+dist
 storybook-static/
 
 # misc

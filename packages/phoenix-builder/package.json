@@ -3,20 +3,32 @@
   "version": "0.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
-  "author": "navono <navono007@gmail.com>",
-  "license": "ISC",
-  "main": "lib/phoenix-builder.js",
+  "private": true,
+  "main": "src/phoenix-builder.js",
+  "bin": {
+    "phoenix-builder": "./src/phoenix-builder.js"
+  },
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "postcss": "^8.2.8",
+    "rollup": "^2.43.1",
+    "rollup-plugin-postcss": "^4.0.0"
   }
 }
