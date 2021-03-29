@@ -18,7 +18,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build",
+    "build": "lerna run build --parallel",
+    "lint": "lerna run lint --parallel",
     "clean": "lerna clean -y",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
