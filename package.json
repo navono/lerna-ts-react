@@ -10,6 +10,7 @@
     "@storybook/addon-links": "^6.1.21",
     "@storybook/react": "^6.1.21",
     "babel-loader": "^8.2.2",
+    "colors": "^1.4.0",
     "lerna": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -22,7 +23,9 @@
     "lint": "lerna run lint --parallel",
     "clean": "lerna clean -y",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "pkg-init": "node ./scripts/init.js",
+    "lint-file": "eslint --ignore-path ./.eslintignore --quiet --fix "
   },
   "keywords": [],
   "author": "",

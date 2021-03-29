@@ -1,13 +1,13 @@
 {
-  "name": "@cddev/phoenix-text",
+  "name": "@cddev/phoenix-counter",
   "version": "0.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "navono <navono007@gmail.com>",
   "private": true,
-  "src": "src/Phoenix-Text.tsx",
-  "main": "dist/phoenix-text.cjs.js",
-  "module": "dist/phoenix-text.esm.js",
+  "src": "src/index.tsx",
+  "main": "dist/phoenix-counter.cjs.js",
+  "module": "dist/phoenix-counter.esm.js",
   "directories": {
     "src": "src",
     "test": "__tests__"
@@ -25,21 +25,21 @@
   },
   "devDependencies": {
     "@cddev/phoenix-builder": "^0.0.0",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@types/react-redux": "^7.1.16",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "eslint": "^7.23.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "react": "^17.0.2",
+    "react-redux": "^7.2.3",
+    "redux": "^4.0.5",
     "typescript": "^4.2.3"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
-  },
-  "dependencies": {
-    "clsx": "^1.1.1"
+    "react": "^17.0.2",
+    "react-redux": "^7.2.3",
+    "redux": "^4.0.5"
   }
 }

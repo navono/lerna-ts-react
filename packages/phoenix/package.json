@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@cddev/phoenix-button": "^0.0.0",
+    "@cddev/phoenix-counter": "^0.0.0",
     "@cddev/phoenix-text": "^0.0.0"
   },
   "devDependencies": {
