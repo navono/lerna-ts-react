@@ -19,7 +19,7 @@
     "access": "public"
   },
   "scripts": {
-    "lint": "eslint . --ignore-path ../../.eslintignore --quiet --fix ./src/**/*",
+    "lint": "eslint --ignore-path ../../.eslintignore --quiet --fix ./src/**/*",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
