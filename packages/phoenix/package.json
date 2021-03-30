@@ -5,7 +5,7 @@
   "keywords": [],
   "author": "navono <navono007@gmail.com>",
   "private": true,
-  "src": "src/phoenix.js",
+  "src": "src/phoenix.ts",
   "main": "dist/phoenix.cjs.js",
   "module": "dist/phoenix.esm.js",
   "directories": {
@@ -21,13 +21,24 @@
   },
   "scripts": {
     "build": "phoenix-builder",
+    "lint": "eslint . --ignore-path ../../.eslintignore --quiet --fix ./src/**/*",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
     "@cddev/phoenix-button": "^0.0.0",
+    "@cddev/phoenix-counter": "^0.0.0",
     "@cddev/phoenix-text": "^0.0.0"
   },
   "devDependencies": {
-    "@cddev/phoenix-builder": "^0.0.0"
+    "@cddev/phoenix-builder": "^0.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.2.3"
   }
 }
