@@ -2,7 +2,7 @@
 
 `master` branch code from this [blog](https://dev.to/davixyz/writing-your-first-react-ui-library-part-1-lerna-17kc).
 
-`redux` branch integrate `TypeScript`, `ESlint`, `Redux` features
+`redux` branch integrate `TypeScript`, `ESlint`, `React`, `Redux` features.
 
 ## Lerna part
 
