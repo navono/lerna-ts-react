@@ -14,25 +14,29 @@ const { src, name } = require(path.join(currentWorkingPath, 'package.json'));
 
 const inputPath = path.join(currentWorkingPath, src);
 
-// console.log('postcss', postcss);
-
 // Little workaround to get package name without scope
 const fileName = name.replace('@cddev/', '');
 
 // see below for details on the options
 const inputOptions = {
   input: inputPath,
-  external: ['react'],
+  external: ['react', 'react-dom'],
   plugins: [
     peerDepsExternal(),
     resolve(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss({
-      // Key configuration
+      // enables CSS modules for the bundle.
       modules: true,
+
       sourceMap: true,
+
+      // Keeps the CSS in the JavaScript file. If you want to generate a separate CSS file
+      // you can set extract to true and Rollup would build a index.css file which is also
+      // put in the projects dist/ directory
       extract: true,
+
       minimize: true,
       extensions: ['.css', '.less'],
     }),
