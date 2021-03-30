@@ -8,6 +8,7 @@
   "src": "src/phoenix.ts",
   "main": "dist/phoenix.cjs.js",
   "module": "dist/phoenix.esm.js",
+  "types": "dist/phoenix.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__"

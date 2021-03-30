@@ -8,6 +8,7 @@
   "src": "src/index.tsx",
   "main": "dist/phoenix-counter.cjs.js",
   "module": "dist/phoenix-counter.esm.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__"

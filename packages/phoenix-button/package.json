@@ -8,6 +8,7 @@
   "src": "src/phoenix-button.tsx",
   "main": "dist/phoenix-button.cjs.js",
   "module": "dist/phoenix-button.esm.js",
+  "types": "dist/phoenix-button.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__"

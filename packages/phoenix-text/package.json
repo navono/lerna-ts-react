@@ -5,9 +5,10 @@
   "keywords": [],
   "author": "navono <navono007@gmail.com>",
   "private": true,
-  "src": "src/Phoenix-Text.tsx",
+  "src": "src/phoenix-text.tsx",
   "main": "dist/phoenix-text.cjs.js",
   "module": "dist/phoenix-text.esm.js",
+  "types": "dist/phoenix-text.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__"
