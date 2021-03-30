@@ -3,10 +3,17 @@
     "packages/*"
   ],
   "npmClient": "yarn",
+  "registry": "",
   "useWorkspaces": true,
-  "version": "0.0.0",
+  "version": "independent",
   "stream": true,
   "npmClientArgs": {
     "npmClientArgs": ["--no-package-lock"]
+  },
+  "command": {
+    "publish": {
+      "convertionalCommits": true,
+      "message": "chore(release): Publish"
+    }
   }
 }
