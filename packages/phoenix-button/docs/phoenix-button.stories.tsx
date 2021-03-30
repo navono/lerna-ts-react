@@ -1,6 +1,6 @@
 import React from 'react';
 // We want to always get from source
-import { Button } from '../src/Phoenix-Button';
+import { Button } from '../src/phoenix-button';
 
 export default { title: 'Button' };
 

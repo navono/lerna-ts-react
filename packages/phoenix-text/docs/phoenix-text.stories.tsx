@@ -1,6 +1,6 @@
 import React from 'react';
 // We want to always get from source
-import { Text } from '../src/Phoenix-Text';
+import { Text } from '../src/phoenix-text';
 
 export default { title: 'Text' };
 
