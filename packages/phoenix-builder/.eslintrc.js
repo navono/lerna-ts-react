@@ -1,8 +1,6 @@
 module.exports = {
   extends: '../../.eslintrc.js',
   plugins: [
-    // 'react',
-    // '@typescript-eslint',
+    '@typescript-eslint',
   ],
-  ignorePatterns: ['**/*/*.test.js'],
 };
