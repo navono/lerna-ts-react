@@ -29,14 +29,11 @@ const inputOptions = {
     postcss({
       // enables CSS modules for the bundle.
       modules: true,
-
       sourceMap: true,
-
       // Keeps the CSS in the JavaScript file. If you want to generate a separate CSS file
       // you can set extract to true and Rollup would build a index.css file which is also
       // put in the projects dist/ directory
       extract: false,
-
       minimize: true,
       extensions: ['.css', '.less'],
     }),
