@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build",
+    "build": "lerna run lint && lerna run build",
     "lint": "lerna run lint --parallel",
     "clean": "lerna clean -y && rimraf -rf ./node_modules",
     "storybook": "start-storybook -p 6006",
