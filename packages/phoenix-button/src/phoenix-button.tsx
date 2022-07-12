@@ -3,9 +3,10 @@ import cx from 'clsx';
 import { ButtonProps } from './Button.types';
 import styles from './button.css';
 
-const Button: React.FC<ButtonProps> = ({
-  children, className, variant, ...rest
-}) => {
+function Button(props: ButtonProps) {
+  const {
+    children, className, variant, ...rest
+  } = props;
   const classes = cx(
     styles.Button,
     {
@@ -18,6 +19,6 @@ const Button: React.FC<ButtonProps> = ({
       {children}
     </button>
   );
-};
+}
 
 export { Button };
