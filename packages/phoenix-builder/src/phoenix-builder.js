@@ -1,27 +1,27 @@
 #!/usr/bin/env node
 /* eslint-disable @typescript-eslint/no-var-requires */
-const rollup = require("rollup");
-const path = require("path");
-const peerDepsExternal = require("rollup-plugin-peer-deps-external");
-const resolve = require("@rollup/plugin-node-resolve").default;
-const commonjs = require("@rollup/plugin-commonjs");
-const babel = require("@rollup/plugin-babel").default;
-const typescript = require("rollup-plugin-typescript2");
-const postcss = require("rollup-plugin-postcss");
+const rollup = require('rollup');
+const path = require('path');
+const peerDepsExternal = require('rollup-plugin-peer-deps-external');
+const resolve = require('@rollup/plugin-node-resolve').default;
+const commonjs = require('@rollup/plugin-commonjs');
+const babel = require('@rollup/plugin-babel').default;
+const typescript = require('rollup-plugin-typescript2');
+const postcss = require('rollup-plugin-postcss');
 
 const currentWorkingPath = process.cwd();
 // eslint-disable-next-line import/no-dynamic-require
-const { src, name } = require(path.join(currentWorkingPath, "package.json"));
+const { src, name } = require(path.join(currentWorkingPath, 'package.json'));
 
 const inputPath = path.join(currentWorkingPath, src);
 
 // Little workaround to get package name without scope
-const fileName = name.replace("@cddev/", "");
+const fileName = name.replace('@cddev/', '');
 
 // see below for details on the options
 const inputOptions = {
   input: inputPath,
-  external: ["react", "react-dom"],
+  external: ['react', 'react-dom'],
   plugins: [
     peerDepsExternal(),
     resolve(),
@@ -36,12 +36,12 @@ const inputOptions = {
       // put in the projects dist/ directory
       extract: false,
       minimize: true,
-      extensions: [".css", ".less"],
+      extensions: ['.css', '.less'],
     }),
     babel({
-      presets: ["@babel/preset-env", "@babel/preset-react"],
-      babelHelpers: "bundled",
-      exclude: "node_modules/**",
+      presets: ['@babel/preset-env', '@babel/preset-react'],
+      babelHelpers: 'bundled',
+      exclude: 'node_modules/**',
     }),
   ],
 };
@@ -49,11 +49,11 @@ const inputOptions = {
 const outputOptions = [
   {
     file: `dist/${fileName}.cjs.js`,
-    format: "cjs",
+    format: 'cjs',
   },
   {
     file: `dist/${fileName}.esm.js`,
-    format: "esm",
+    format: 'esm',
   },
 ];
 
