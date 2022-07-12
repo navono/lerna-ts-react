@@ -1,3 +1,3 @@
-import { Button } from '@cddev/phoenix-button';
+import { Button } from "@cddev/phoenix-button";
 
 export { Button };

@@ -21,8 +21,7 @@
   },
   "scripts": {
     "build": "rimraf dist && phoenix-builder",
-    "lint": "eslint --ignore-path ../../.eslintignore --quiet --fix ./src/**/*",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "lint": "eslint --ignore-path ../../.eslintignore --quiet --fix ./src/**/*"
   },
   "devDependencies": {
     "@cddev/phoenix-builder": "^0.0.0",
