@@ -61,4 +61,4 @@ We are going to use the Javascript API in rollup and produce 2 bundles:
 > npx -p @storybook/cli sb init --type react
 >
 
-delete top level stories
+delete top level stories.
