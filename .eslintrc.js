@@ -8,6 +8,13 @@ module.exports = {
     'airbnb',
   ],
   plugins: ['prettier'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -16,6 +23,15 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['**/*/*.test.js'],
+  overrides: [
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react'],
+      env: {
+        jest: true,
+      },
+    },
+  ],
   rules: {
     'import/extensions': 0,
     'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
@@ -36,12 +52,5 @@ module.exports = {
     'no-param-reassign': [2, { props: false }],
     'import/prefer-default-export': [0],
     'react/jsx-props-no-spreading': 0,
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
   },
 };

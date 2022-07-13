@@ -1,8 +1,6 @@
-# Lerna-TS-React
+# Typescript-React-Template
 
 `master` branch integrate `TypeScript`, `ESlint`, `React`, `Redux` features.
-
-`blog` branch code from this [blog](https://dev.to/davixyz/writing-your-first-react-ui-library-part-1-lerna-17kc).
 
 ## Lerna part
 

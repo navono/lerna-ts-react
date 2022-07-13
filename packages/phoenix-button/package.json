@@ -1,6 +1,6 @@
 {
   "name": "@cddev/phoenix-button",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "navono <navono007@gmail.com>",
@@ -17,11 +17,13 @@
   ],
   "publishConfig": {
     "access": "public",
+    "registry": "http://192.168.25.57:8081/repository/npm-private/",
     "directory": "."
   },
   "scripts": {
     "build": "rimraf dist && phoenix-builder",
-    "lint": "eslint --ignore-path ../../.eslintignore --quiet --fix ./src/**/*"
+    "lint": "eslint --ignore-path ../../.eslintignore --quiet --fix ./src/**/*",
+    "release-dry-run": "release-it --dry-run --ci"
   },
   "devDependencies": {
     "@cddev/phoenix-builder": "^0.0.0",
